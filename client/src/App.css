@@ -1,8 +1,59 @@
 .a:focus {
-  outline-color:green ;
+  outline-color: green;
 }
 
-.container{
-  background-color: dodgerblue;
+.box {
+  /* background-color: dodgerblue; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: url("https://source.unsplash.com/random/?city,car");
+  background-size: cover;
+}
+
+/* style={{ display: 'flex',flexDirection:'row', justifyContent:"center", alignItems:"center", height:"100vh", width: "100vw"   }} */
+
+/* style={{padding:10, backgroundColor:"white" , borderRadius:8  }} */
+.a {
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* style={{paddingLeft:10, width:550,paddingTop:5, paddingBottom:5,borderRadius:6, borderColor:"#34495E"}} */
+
+.b {
+  border: 2px solid #1e90ff;
+  padding: 10px 20px;
+  width: 550px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 18px;
+}
+
+.c {
+  margin-left: 10px;
+  padding: 10px 10px;
+  border: 2px solid #1e90ff;
+  border-radius: 5px;
+  color: #1e90ff;
+  font-size: 18px;
+}
+
+.c:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+
+
+.h6 {
+  margin:20px 10px ;
+   text-align:center;
+   font-size: 18px;
 }
 

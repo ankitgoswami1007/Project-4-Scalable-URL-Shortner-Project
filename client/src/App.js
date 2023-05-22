@@ -23,7 +23,7 @@ function App() {
           body: JSON.stringify({longUrl: url}),
         })
         console.log("hi")
-        let {status,data} = await response.json()
+        let {data} = await response.json()
         console.log(data.shortUrl)
         setSortUrl(data.shortUrl)
       } catch (error) {
@@ -32,12 +32,12 @@ function App() {
   }
   return (
     <>
-    <div className="container" style={{ backgroundColor: "#778899", display: 'flex',flexDirection:'row', justifyContent:"center", alignItems:"center", height:"100vh", width: "100vw"   }}>
+    <div className="box" >
      
-        <div className='a' style={{padding:10, backgroundColor:"white" , borderRadius:8  }}>
-          <input value={url} style={{paddingLeft:10, width:550,paddingTop:5, paddingBottom:5,borderRadius:6, borderColor:"#34495E"}} onChange={setValue} type='text' placeholder='Enter URL' />
-          <button className='' style={{marginLeft:20, paddingTop:5, paddingBottom:5 ,borderRadius:6 }} onClick={handleSave}>Submit</button>
-          {sortUrl && <h6 style={{marginTop:20 , textAlign:'center'}} onClick={()=>{navigator.clipboard.writeText(sortUrl)}}>{sortUrl}</h6>}
+        <div className='a' >
+          <input className='b' value={url}  onChange={setValue} type='text' placeholder='Paste link here' />
+          <button className='c'  onClick={handleSave}>Generate URL</button>
+          {sortUrl && <h6 className='h6'  onClick={()=>{navigator.clipboard.writeText(sortUrl)}}>{sortUrl}</h6>}
         </div>
     </div>
       
