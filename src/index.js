@@ -3,7 +3,7 @@ require('dotenv').config()
 const path = require("path");
 const route = require('./routes/route.js');
 const { default: mongoose } = require('mongoose');
-const cors = require('cors')
+const cors = require('cors');
 const app = express();
 
 app.use(cors());
