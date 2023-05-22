@@ -47,7 +47,7 @@ const createShortURL = async function(req, res){
         let dataObj = {}
 
         //const baseUrl = 'http://localhost:5000/apiV1'
-        const baseUrl = "https://project-4-scalable-url-shortner-project.vercel.app/"
+        const baseUrl = "https://project-4-scalable-url-shortner-project.vercel.app/apiV1"
 
         if (Object.keys(data).length == 0) {
             return res.status(400).send({ status: false, message: "Feild Can't Empty.Please Enter Some Details" });
